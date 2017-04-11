@@ -7,7 +7,7 @@ class DoctorsController < ApplicationController
   end
 
   def show
-    @users = User.where(doctor_id: @doctor.id).order("created_at DESC")
+    @users = User.where(doctor_id: @doctor.id).order("created_at")
 
     respond_to do |format|
       format.html { render :show }
