@@ -3,14 +3,17 @@
 </div>
 
 <div class="row">
-  <% @doctors.each do |doctor| %>
+<% @doctors.each do |doctor| %>
   <div class="col-sm-6 col-md-3">
-    <div class="thumbnail"><img src="<%= doctor.image %>"></div>
-    <p><%= doctor.name %></p>
-    <p><%= link_to 'Show', doctor %></p>
+    <div class="thumbnail">
+      <img src="<%= doctor.image %>">
+      <div class="caption">
+        <h3><%= doctor.name %></h3>
+        <p><%= link_to "Select", doctor %></p>
+      </div>
     </div>
-    <% end %>
-  
+  </div>
+  <% end %>
 </div>
 
 
