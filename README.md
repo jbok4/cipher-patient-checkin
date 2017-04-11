@@ -1,24 +1,15 @@
-# README
+* To Initialize app, fork it from github, 
+then in terminal type the following commands
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* To install all gem dependencies type `bundle install` in the terminal
 
-Things you may want to cover:
+* To Initialize the Database, in terminal run `rails db:migrate`
 
-* Ruby version
+* To seed the database run `rake db:seed`
 
-* System dependencies
+* To run the test suite, in terminal type `rspec`
 
-* Configuration
 
-* Database creation
+* Finally, type `rails s` to run your localhost rails server, and in your browser, and find the app at localhost:3000
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##enjoy!
