@@ -1,17 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @doctor.name %>
-</p>
+<p><strong>Dr. <%= @doctor.name %></strong></p>
+
+<p><img src="<%= @doctor.image %>"></p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @doctor.image %>
-</p>
-
-<p>
-  <strong>Description:</strong>
   <%= @doctor.description %>
 </p>
 
