@@ -3,9 +3,16 @@ class DoctorsController < ApplicationController
 
   def index
     @doctors = Doctor.all
+
   end
 
   def show
+    @users = User.where(doctor_id: @doctor.id).order("created_at DESC")
+
+    respond_to do |format|
+      format.html { render :show }
+      format.json { render json: @doctor}
+    end
   end
 
   def new
@@ -55,6 +62,6 @@ class DoctorsController < ApplicationController
     end
 
     def doctor_params
-      params.require(:doctor).permit(:name, :image, :description)
+      params.require(:doctor).permit(:name, :image, :description, users_attributes: [:name, :phone, :insurance_co, :insurance_number])
     end
 end
