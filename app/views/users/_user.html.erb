@@ -2,7 +2,11 @@
   <div>
   <% if current_user.superadmin_role? || current_user.supervisor_role? %>
     <p><%= user.name.titleize %></p>
-      <p>Here i want to call the user.seen_by_dr method from the user.rb file</p>
+    <% if user.doctor_id != 5 %>
+      <%= link_to 'Click When Patient Seen', user_see_patient_path(user.id), method: :post %>
+      <% else %>
+      <p>Seen by Doctor Today</p>
+      <% end %>
     <% else %>
     <p><%= user.name.titleize %></p>
   <% end %>

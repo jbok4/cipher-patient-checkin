@@ -6,6 +6,12 @@ class UsersController < ApplicationController
     render json: User.all
   end
 
+  def seePatient
+    @user = User.find(params[:id])
+    @user.update(doctor_id: 5)
+    redirect_to root_path
+  end
+
 
 
 

@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-md-6">
-<p><strong>Dr. <%= @doctor.name %></strong></p>
+<p><strong><%= @doctor.name %></strong></p>
 
 <p><img src="<%= @doctor.image %>"></p>
 
@@ -17,7 +17,7 @@
     <h4>Patients Waiting To Be Seen</h4>
     <p><%= render @users %></p>
   <% else %>
-    <h4>Patients Already Seen</h4>
+    <h4>All Patients Seen Today</h4>
     <p><%= render @users %></p>
   <% end %>
 

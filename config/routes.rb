@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   end
   
   resources :users, only: :index
+  post '/users/:id/seen', to: 'users#seePatient', as: 'user_see_patient'
 
   root 'doctors#index'
 
