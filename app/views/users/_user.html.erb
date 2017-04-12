@@ -1,10 +1,9 @@
 <div class="well well-sm pink-well">
-  <div><p"><%= user.name.titleize %></p>
-  <% if user.doctor_id != 5 %>
-  <%= form_for :user, :method => :PUT , :html => { :multipart => true } do |f| %>
-    <%= f.hidden_field :doctor_id, value: 5 %>
-    <%= f.submit 'Update' %>
-  <% end %>
+  <div>
+  <% if current_user.superadmin_role? || current_user.supervisor_role? %>
+    <p><%= user.name.titleize %> Visible only for superadmins and supervisors! </p>
+  <% else %>
+  <p><%= user.name.titleize %></p>
 <% end %>
 
      </div>
