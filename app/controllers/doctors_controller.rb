@@ -1,6 +1,7 @@
 class DoctorsController < ApplicationController
   before_action :set_doctor, only: [:show, :edit, :update, :destroy]
 
+
   def index
     @doctors = Doctor.all
 
@@ -8,10 +9,13 @@ class DoctorsController < ApplicationController
 
   def show
     @users = User.where(doctor_id: @doctor.id).order("created_at")
-
-    respond_to do |format|
-      format.html { render :show }
-      format.json { render json: @doctor}
+    if current_user
+      respond_to do |format|
+        format.html { render :show }
+        format.json { render json: @doctor}
+      end
+    else
+      redirect_to(root_path, notice: 'Not authorized, please log in')
     end
   end
 
