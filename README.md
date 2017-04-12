@@ -9,4 +9,4 @@ then in terminal type the following commands
 
 * Finally, type `rails s` to run your localhost rails server, and in your browser, and find the app at localhost:3000
 
-##enjoy!
+## Enjoy!

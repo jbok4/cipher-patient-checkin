@@ -6,12 +6,9 @@ class UsersController < ApplicationController
    end
 
 
-
-
-
   private
 
     def user_params
-      params.require(:doctor).permit(:name, :image, :description)
+      params.require(:user).permit(:name, :phone, :email, :insurance_co, :insurance_number, :doctor_id)
     end
 end

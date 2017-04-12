@@ -5,4 +5,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   belongs_to :doctor
+
+  # def seen_by_dr
+  #   # self.update(doctor_id: 5)
+  #   # self.save
+  # end
+
 end
