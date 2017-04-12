@@ -1,11 +1,11 @@
-<div class="well pink-well">
+<div class="well well-sm pink-well">
   <div><p"><%= user.name.titleize %></p>
   <% if user.doctor_id != 5 %>
   <%= form_for :user do |f| %>
     <%= f.hidden_field :doctor_id, value: 5 %>
-    <%= f.submit 'Seen By Doctor' %>
+    <%= f.submit 'Update' %>
   <% end %>
 <% end %>
 
-     
+     </div>
 </div>
