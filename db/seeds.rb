@@ -19,6 +19,14 @@ users = User.create([
   { doctor_id: 2, name: "Matt Harvey", email: "batman@mets.com", phone: "6318796654", insurance_co: "empire", insurance_number: "222222289", password: 'topsecret', password_confirmation: 'topsecret' },
   { doctor_id: 1, name: "Gary Sanchez", email: "backstop@yankees.com", phone: "5162224532", insurance_co: "fidelis", insurance_number: "111111111", password: 'topsecret', password_confirmation: 'topsecret' },
   { doctor_id: 3, name: "Jacoby Ellsbury", email: "jellsbury@ellsbury.com", phone: "1347854269", insurance_co: "oscar", insurance_number: "555555555", password: 'topsecret', password_confirmation: 'topsecret' },
-  { doctor_id: 1, name: "Matt Holliday", email: "matt@homerun.com", phone: "0009543278", insurance_co: "oxford", insurance_number: "777788990", password: 'topsecret', password_confirmation: 'topsecret' }
+  { doctor_id: 3, name: "Thurman Munson", email: "munson@yanks.com", phone: "5164281906", insurance_co: "empire", insurance_number: "999994567", password: 'topsecret', password_confirmation: 'topsecret' },
+  { doctor_id: 4, name: "Ron Darling", email: "ron@booth.com", phone: "5558675309", insurance_co: "oxford", insurance_number: "888822288", password: 'topsecret', password_confirmation: 'topsecret' },
+  { doctor_id: 1, name: "David Cone", email: "coneman@perfectgame.com", phone: "7777456777", insurance_co: "empire", insurance_number: "123456789", password: 'topsecret', password_confirmation: 'topsecret', superadmin_role: true, user_role: false },
+  { doctor_id: 2, name: "Mike Piazza", email: "backstop@mets.com", phone: "2125551121", insurance_co: "oscar", insurance_number: "008880000", password: 'topsecret', password_confirmation: 'topsecret' },
+  { doctor_id: 4, name: "Mo Riviera", email: "sandman@yankees.com", phone: "6785554567", insurance_co: "fidelis", insurance_number: "223344556", password: 'topsecret', password_confirmation: 'topsecret' },
+  { doctor_id: 2, name: "David Wells", email: "fatman@yanks.com", phone: "6318796654", insurance_co: "empire", insurance_number: "222222289", password: 'topsecret', password_confirmation: 'topsecret' },
+  { doctor_id: 1, name: "Jorge Posada", email: "georgi@yankees.com", phone: "5163454532", insurance_co: "aetna", insurance_number: "111133311", password: 'topsecret', password_confirmation: 'topsecret' },
+  { doctor_id: 3, name: "Derek Jeter", email: "jete@yankees.com", phone: "1376654269", insurance_co: "oscar", insurance_number: "555555555", password: 'topsecret', password_confirmation: 'topsecret' },
+  { doctor_id: 1, name: "Matt Holliday", email: "matt@homerun.com", phone: "5559543278", insurance_co: "oxford", insurance_number: "777788790", password: 'topsecret', password_confirmation: 'topsecret' }
 
   ])
