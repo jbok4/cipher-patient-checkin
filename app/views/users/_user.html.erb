@@ -1,10 +1,11 @@
 <div class="well well-sm pink-well">
   <div>
   <% if current_user.superadmin_role? || current_user.supervisor_role? %>
-    <p><%= user.name.titleize %> Visible only for superadmins and supervisors! </p>
-  <% else %>
-  <p><%= user.name.titleize %></p>
-<% end %>
+    <p><%= user.name.titleize %></p>
+      <p>Here i want to call the user.seen_by_dr method from the user.rb file</p>
+    <% else %>
+    <p><%= user.name.titleize %></p>
+  <% end %>
 
      </div>
 </div>
