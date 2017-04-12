@@ -13,7 +13,7 @@ Dr. Cherry graduated from Stanford University, where he was elected to Phi Beta 
 users = User.create([
   { doctor_id: 3, name: "Lucas Duda", email: "lucas@duda.com", phone: "5164281906", insurance_co: "empire", insurance_number: "999999999", password: 'topsecret', password_confirmation: 'topsecret' },
   { doctor_id: 3, name: "Joe Girardi", email: "joe@yankees.com", phone: "5558675309", insurance_co: "oxford", insurance_number: "888888888", password: 'topsecret', password_confirmation: 'topsecret' },
-  { doctor_id: 1, name: "Jose Reyes", email: "Jose@mets.com", phone: "7777777777", insurance_co: "empire", insurance_number: "123456789", password: 'topsecret', password_confirmation: 'topsecret' },
+  { doctor_id: 1, name: "Jose Reyes", email: "Jose@mets.com", phone: "7777777777", insurance_co: "empire", insurance_number: "123456789", password: 'topsecret', password_confirmation: 'topsecret', superadmin_role: true, user_role: false },
   { doctor_id: 2, name: "Chase Headley", email: "thirdbase@yankees.com", phone: "2125551221", insurance_co: "fidelis", insurance_number: "000000000", password: 'topsecret', password_confirmation: 'topsecret' },
   { doctor_id: 4, name: "Brett Gardner", email: "brett@gardner.com", phone: "6781114567", insurance_co: "fidelis", insurance_number: "223344556", password: 'topsecret', password_confirmation: 'topsecret' },
   { doctor_id: 2, name: "Matt Harvey", email: "batman@mets.com", phone: "6318796654", insurance_co: "empire", insurance_number: "222222289", password: 'topsecret', password_confirmation: 'topsecret' },
